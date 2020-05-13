@@ -41,7 +41,7 @@ function myFunction() {
             window.document.getElementById('softSkill').classList.remove('none');
             window.document.getElementById('softSkill').classList.add('fadeInUp','animated','animatedFadeInUp');
         }
-    } else if (screen.width < 1025 && screen.width > 800) {
+    } else if (screen.width <= 1025 && screen.width > 800) {
         console.log('tabellette grande')
         if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
             window.document.getElementById('declencheur1').classList.remove('none');
