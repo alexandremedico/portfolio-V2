@@ -1,0 +1,582 @@
+/* responsive */
+
+@media screen and (min-width: 1440px) {
+  #navigation li a {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .competences
+  {
+    height: 90vh;
+  }
+  .competences .part2 ul .soft
+  {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home{
+    height: 120vh;
+  }
+  .base article{
+    flex-direction: column;
+    align-items: center;
+    height: 110vh;
+  }
+  .med{
+    margin-top: 0%;
+    margin-right: 63%;
+    margin-bottom: 2%;
+    height: 9%;
+  }
+  .small{
+    margin-top: 0%;
+    margin-right: 47%;
+  }
+  .competences{
+    height: 100vh;
+  }
+  .competences .part2 ul .soft{
+    height: 90vh;
+  }
+  .projets{
+    height: 190vh;
+  }
+  .projets1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .littlegame, .portfolioV1, .cv{
+    margin-bottom: 3%;
+  }
+  .littlegame a, .portfolioV1 a, .cv a{
+    display: flex;
+    justify-content: center;
+  }
+  .moi .part1 p{
+    font-size: 1.3rem;
+    margin-left: 1%;
+  }
+  .moi{
+    height: 70vh;
+  }
+  .projets .ifocop {
+    flex-direction: column;
+  }
+  .projets .littlegame p {
+    margin-left: 15%;
+  }
+  .projets .portfolioV1 p {
+    margin-left: 0%;
+  }
+  .projets .cv p {
+    margin-left: 18%;
+    margin-top: 4%;
+  }
+  .projets .ifocop .jeu-cv img {
+    width: 42%;
+    margin-top: 0%;
+  }
+  .projets .ifocop .pong {
+    text-align: center;
+    width: 55%;
+    margin-left: 22%;
+  }
+  .projets h1 {
+    margin-bottom: 1.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo{
+    width: 20vw;
+  }
+  .projets{
+    height: 182vh;
+  }
+  .liens{
+    height: 85vh;
+  }
+  .home{
+    height: 100vh;
+  }
+  .competences{
+    height: 70vh;
+  }
+  .competences .part2 ul .soft {
+    height: 65vh;
+  }
+  .med{
+    width: 12%;
+  }
+  .small{
+    width: 6%;
+  }
+  .competences .part2 ul li {
+    font-size: 1.5rem;
+  }
+  .part1{
+    margin-left: 2%;
+  }
+  .moi .part1 p {
+    font-size: 1.1rem;
+  }
+  .moi {
+    height: 60vh;
+  }
+  .soleil{
+    width: 50px;
+    height: 50px;
+  }
+  .orbite_mercure{
+    width: 150px;
+    height: 150px;
+  }
+  @-webkit-keyframes ellipse_mercure {
+  from { -webkit-transform: rotate(0deg) translateY(-75px);}
+  to { -webkit-transform: rotate(-360deg) translateY(-75px);}
+  }
+  @keyframes ellipse_mercure {
+  from { transform: rotate(0deg) translateY(-75px);}
+  to { transform: rotate(-360deg) translateY(-75px);}
+  }
+  .orbite_venus{
+    width: 300px;
+    height: 300px;
+  }
+  @-webkit-keyframes ellipse_venus {
+  from { -webkit-transform: rotate(0deg) translateY(-150px);}
+  to { -webkit-transform: rotate(360deg) translateY(-150px);}
+  }
+  @keyframes ellipse_venus {
+  from { transform: rotate(0deg) translateY(-150px);}
+  to { transform: rotate(360deg) translateY(-150px);}
+  }
+  .orbite_earth{
+    width: 450px;
+    height: 450px;
+  }
+  @-webkit-keyframes ellipse_earth {
+  from { -webkit-transform: rotate(0deg) translateY(-225px);}
+  to { -webkit-transform: rotate(-360deg) translateY(-225px);}
+  }
+  @keyframes ellipse_earth {
+  from { transform: rotate(0deg) translateY(-225px);}
+  to { transform: rotate(-360deg) translateY(-225px);}
+  }
+  .orbite_mars{
+    width: 600px;
+    height: 600px;
+  }
+  @-webkit-keyframes ellipse_mars {
+  from { -webkit-transform: rotate(0deg) translateY(-300px);}
+  to { -webkit-transform: rotate(360deg) translateY(-300px);}
+  }
+  @keyframes ellipse_mars {
+  from { transform: rotate(0deg) translateY(-300px);}
+  to { transform: rotate(360deg) translateY(-300px);}
+  }
+  .projets h1 {
+    margin-bottom: 1.5%;
+  }
+  .ifocop {
+    flex-direction: column;
+  }
+  .projets .littlegame p {
+    margin-left: 16%;
+  }
+  .projets .portfolioV1 p {
+    margin-left: 0%;
+  }
+  .projets .cv p {
+    margin-left: 18%;
+    margin-top: 4%;
+  }
+  .projets .ifocop {
+    flex-direction: column;
+  }
+  .projets .ifocop .jeu-cv img {
+    margin-top: 0%;
+    width: 50%;
+  }
+  .projets .ifocop .pong {
+    width: 75%;
+    margin-left: 12%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu-burger{
+    visibility: visible;
+  }
+  .menu{
+    visibility: hidden;
+  }
+  html, body {
+    overflow-x: hidden;
+    height: 100%;
+  }
+  body {
+      background: #fff;
+      padding: 0;
+      margin: 0;
+      font-family: 'Varela Round', sans-serif;
+  }
+  #sidebarMenu {
+      position: fixed;
+      right: 0;
+      z-index: 1;
+      width: 250px;
+      transform: translateX(250px);
+      transition: transform 250ms ease-in-out;
+      background-color: #1C1A1A;
+  }
+  .sidebarMenuInner{
+      margin:0;
+      padding:0;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .sidebarMenuInner li{
+      list-style: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 20px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+  }
+  .sidebarMenuInner li span{
+      display: block;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.50);
+  }
+  .sidebarMenuInner li a{
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  input[type="checkbox"]:checked ~ #sidebarMenu {
+      transform: translateX(0);
+  }
+  input[type=checkbox] {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      display: none;
+  }
+  .sidebarIconToggle {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      cursor: pointer;
+      position: absolute;
+      z-index: 99;
+      height: 100%;
+      width: 100%;
+      top: 30px;
+      left: 75%;
+      height: 12px;
+      width: 70px;
+  }
+  .spinner {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+  }
+  .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .diagonal.part-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+  }
+  .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 8px;
+  }
+  input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -25px;
+  }
+  .logo{
+    width: 45vw;
+    margin-left: 2%;
+  }
+  .competences .part2 ul li {
+    font-size: 1.1rem;
+  }
+  .competences .part2 ul .soft {
+    height: 54vh;
+  }
+  .projets {
+    height: 150vh;
+  }
+  .soleil {
+  width: 50px;
+  height: 50px;
+  }
+  .orbite_mercure{
+    width: 120px;
+    height: 120px;
+  }
+  @-webkit-keyframes ellipse_mercure {
+  from { -webkit-transform: rotate(0deg) translateY(-60px);}
+  to { -webkit-transform: rotate(-360deg) translateY(-60px);}
+  }
+  @keyframes ellipse_mercure {
+  from { transform: rotate(0deg) translateY(-60px);}
+  to { transform: rotate(-360deg) translateY(-60px);}
+  }
+  .orbite_venus {
+    width: 225px;
+    height: 225px;
+  }
+  @-webkit-keyframes ellipse_venus {
+  from { -webkit-transform: rotate(0deg) translateY(-112.5px);}
+  to { -webkit-transform: rotate(360deg) translateY(-112.5px);}
+  }
+  @keyframes ellipse_venus {
+  from { transform: rotate(0deg) translateY(-112.5px);}
+  to { transform: rotate(360deg) translateY(-112.5px);}
+  }
+  .orbite_earth {
+    width: 325px;
+    height: 325px;
+  }
+  @-webkit-keyframes ellipse_earth {
+  from { -webkit-transform: rotate(0deg) translateY(-162.5px);}
+  to { -webkit-transform: rotate(-360deg) translateY(-162.5px);}
+  }
+  @keyframes ellipse_earth {
+  from { transform: rotate(0deg) translateY(-162.5px);}
+  to { transform: rotate(-360deg) translateY(-162.5px);}
+  }
+  .orbite_mars {
+  width: 425px;
+  height: 425px;
+  }
+  @-webkit-keyframes ellipse_mars {
+  from { -webkit-transform: rotate(0deg) translateY(-212.5px);}
+  to { -webkit-transform: rotate(360deg) translateY(-212.5px);}
+  }
+  @keyframes ellipse_mars {
+  from { transform: rotate(0deg) translateY(-212.5px);}
+  to { transform: rotate(360deg) translateY(-212.5px);}
+  }
+  .moi {
+    flex-direction: column;
+  }
+  .moi .part1{
+    width: 95%;
+  }
+  .moi .part2{
+    width: 100%;
+  }
+  .moi .part1 p {
+    font-size: 1rem;
+  }
+  .med {
+    width: 23%;
+  }
+  .small {
+    width: 11%;
+  }
+  .big{
+    background-image: url(../img/balloon-big-425px.svg);
+    width: 22em;
+    height: 15.25em;
+  }
+  .balloon .anim span {
+    font-size: 1.2rem;
+  }
+  .balloon.big>div {
+    top: 4em;
+    left: 2.5em;
+  }
+  .part1 .html .barre .barre1 {
+    height: 50px;
+  }
+  .part1 .html .barre .barre1 .barre-html {
+    height: 50px;
+  }
+  .part1 .css .barre .barre1 {
+    height: 50px;
+  }
+  .part1 .css .barre .barre1 .barre-css {
+    height: 50px;
+  }
+  .part1 .javascript .barre .barre1 {
+    height: 50px;
+  }
+  .part1 .javascript .barre .barre1 .barre-javascript {
+    height: 50px;
+  }
+  .part1 .nodeJS .barre .barre1 {
+    height: 50px;
+  }
+  .part1 .nodeJS .barre .barre1 .barre-nodeJS {
+    height: 50px;
+  }
+  .part1 .angularJS .barre .barre1 {
+    height: 50px;
+  }
+  .part1 .angularJS .barre .barre1 .barre-angularJS {
+    height: 50px;
+  }
+  .competences .part1 h1, .competences .part2 h1{
+    font-size: 2rem;
+  }
+  .competences .part2 ul .soft {
+    margin-left: 23%;
+  }
+  .projets .littlegame p {
+    font-size: 0.8rem;
+    margin-left: 20%;
+  }
+  .projets .portfolioV1 p {
+    margin-left: 3%;
+    font-size: 0.8rem;
+  }
+  .projets .cv p {
+    margin-left: 21%;
+    font-size: 0.8rem;
+  }
+  .projets .jeu-cv p {
+    font-size: 0.8rem;
+  }
+  .projets .pong p {
+    font-size: 0.8rem;
+  }
+  .liens {
+    height: 67vh;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  .competences .part2 ul .soft {
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    margin-left: 15%;
+  }
+  .logo img {
+    width: 50%;
+  }
+  .med {
+    width: 25%;
+  }
+  .small {
+    width: 12%;
+    height: 6%;
+  }
+  .moi .part1 p {
+    font-size: 0.8rem;
+  }
+  .projets {
+    height: 142vh;
+  }
+  .part1 .html .barre .barre1 {
+    height: 30px;
+    margin-left: 5%;
+  }
+  .part1 .html .barre .barre1 .barre-html {
+    height: 30px;
+  }
+  .part1 .css .barre .barre1 {
+    height: 30px;
+    margin-left: 5%;
+  }
+  .part1 .css .barre .barre1 .barre-css {
+    height: 30px;
+  }
+  .part1 .javascript .barre .barre1 {
+    height: 30px;
+    margin-left: 5%;
+  }
+  .part1 .javascript .barre .barre1 .barre-javascript {
+    height: 30px;
+  }
+  .part1 .nodeJS .barre .barre1 {
+    height: 30px;
+    margin-left: 5%;
+  }
+  .part1 .nodeJS .barre .barre1 .barre-nodeJS {
+    height: 30px;
+  }
+  .part1 .angularJS .barre .barre1 {
+    height: 30px;
+    margin-left: 5%;
+  }
+  .part1 .angularJS .barre .barre1 .barre-angularJS {
+    height: 30px;
+  }
+  .competences .part1 {
+    margin-left: 2%;
+  }
+  .competences .part2 ul .soft {
+    height: 52vh;
+    margin-left: 20%;
+  }
+  .big {
+    width: 21em;
+  }
+  #navigation{
+    height: 11vh;
+  }
+  .projets .littlegame img {
+    width: 70%;
+    margin-top: 5%;
+  }
+  .projets .littlegame p {
+    margin-left: 45px;
+  }
+  .portfolioV1 a img {
+    width: 80%;
+    margin-top: 5%;
+  }
+  .projets .portfolioV1 p {
+    margin-left: 75px;
+    width: 60%;
+  }
+  .cv a img{
+    margin-top: 5%;
+  }
+  .projets .cv p {
+    margin-left: 30px;
+    margin-top: 4%;
+  }
+  .projets .jeu-cv img {
+    width: 50%;
+  } 
+}
