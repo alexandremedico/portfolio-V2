@@ -428,12 +428,15 @@
 
 /* language html*/
 
+.animation {
+	animation: fadeIn 1s ease-in both;
+}
+
 .part1 .html
 {
   display: flex;
   flex-direction: row;
 	opacity: 0;
-	animation: fadeIn 1s ease-in both;
 }
 
 .part1 .html img
@@ -470,7 +473,6 @@
   display: flex;
   flex-direction: row;
 	opacity: 0;
-	animation: fadeIn 1s ease-in both;
 }
 
 .part1 .css img
@@ -507,7 +509,6 @@
   display: flex;
   flex-direction: row;
 	opacity: 0;
-	animation: fadeIn 1s ease-in both;
 }
 
 .part1 .javascript img
@@ -544,7 +545,6 @@
   display: flex;
   flex-direction: row;
 	opacity: 0;
-	animation: fadeIn 1s ease-in both;
 }
 
 .part1 .nodeJS img
@@ -581,7 +581,6 @@
   display: flex;
   flex-direction: row;
 	opacity: 0;
-	animation: fadeIn 1s ease-in both;
 }
 
 .part1 .angularJS img
@@ -902,3 +901,6 @@ to { transform: rotate(360deg) translateY(-350px);}
   width: 100%;
 }
 
+.none {
+  visibility: hidden;
+}
