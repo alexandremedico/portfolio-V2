@@ -478,6 +478,12 @@
   .liens {
     height: 67vh;
   }
+  .visibility {
+    visibility: visible!important; 
+  }
+  .part1 .html, .part1 .css,.part1 .javascript,.part1 .nodeJS,.part1 .angularJS {
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: 426px) {
