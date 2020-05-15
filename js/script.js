@@ -83,3 +83,307 @@ function myFunction() {
         }
     }
 }
+
+
+// changement de projets
+let i = 0;
+
+document.getElementById('right').addEventListener('click', function () {
+    if (i == 0) {
+        document.body.querySelector('.littlegame').classList.add('slide-in-left-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.littlegame').classList.add('none');
+            document.body.querySelector('.portfolioV1').classList.remove('none');
+            document.body.querySelector('.portfolioV1').classList.add('slide-in-right');
+            document.body.querySelector('.littlegame').classList.remove('slide-in-left-reverse');
+            document.body.querySelector('.un').classList.remove('is-active');
+            document.body.querySelector('.deux').classList.add('is-active');
+            i++;
+            setTimeout(() => {
+                document.body.querySelector('.portfolioV1').classList.remove('slide-in-right');
+            }, 1000);
+        }, 1000);
+    } else if (i == 1) {
+        document.body.querySelector('.portfolioV1').classList.add('slide-in-left-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.portfolioV1').classList.add('none');
+            document.body.querySelector('.cv').classList.remove('none');
+            document.body.querySelector('.cv').classList.add('slide-in-right');
+            document.body.querySelector('.portfolioV1').classList.remove('slide-in-left-reverse');
+            document.body.querySelector('.deux').classList.remove('is-active');
+            document.body.querySelector('.trois').classList.add('is-active');
+            i++;
+            setTimeout(() => {
+                document.body.querySelector('.cv').classList.remove('slide-in-right');
+            }, 1000);
+        }, 1000);        
+    } else if (i == 2) {
+        document.body.querySelector('.cv').classList.add('slide-in-left-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.cv').classList.add('none');
+            document.body.querySelector('.jeu-cv').classList.remove('none');
+            document.body.querySelector('.jeu-cv').classList.add('slide-in-right');
+            document.body.querySelector('.cv').classList.remove('slide-in-left-reverse');
+            document.body.querySelector('.trois').classList.remove('is-active');
+            document.body.querySelector('.quatre').classList.add('is-active');
+            i++;
+            setTimeout(() => {
+                document.body.querySelector('.jeu-cv').classList.remove('slide-in-right');
+            }, 1000);
+        }, 1000);
+    } else if (i == 3) {
+        document.body.querySelector('.jeu-cv').classList.add('slide-in-left-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.jeu-cv').classList.add('none');
+            document.body.querySelector('.pong').classList.remove('none');
+            document.body.querySelector('.pong').classList.add('slide-in-right');
+            document.body.querySelector('.jeu-cv').classList.remove('slide-in-left-reverse');
+            document.body.querySelector('.quatre').classList.remove('is-active');
+            document.body.querySelector('.cinq').classList.add('is-active');
+            i++;
+            setTimeout(() => {
+                document.body.querySelector('.pong').classList.remove('slide-in-right');
+            }, 1000);
+        }, 1000);
+    } else {
+        document.body.querySelector('.pong').classList.add('slide-in-left-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.pong').classList.add('none');
+            document.body.querySelector('.littlegame').classList.remove('none');
+            document.body.querySelector('.littlegame').classList.add('slide-in-right');
+            document.body.querySelector('.pong').classList.remove('slide-in-left-reverse');
+            document.body.querySelector('.cinq').classList.remove('is-active');
+            document.body.querySelector('.un').classList.add('is-active');
+            i = 0;
+            setTimeout(() => {
+                document.body.querySelector('.littlegame').classList.remove('slide-in-right');
+            }, 1000);
+        }, 1000);
+    }
+})
+
+
+document.getElementById('left').addEventListener('click', function () {
+    if (i == 0) {
+        document.body.querySelector('.littlegame').classList.add('slide-in-right-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.littlegame').classList.add('none');
+            document.body.querySelector('.pong').classList.remove('none');
+            document.body.querySelector('.pong').classList.add('slide-in-left');
+            document.body.querySelector('.littlegame').classList.remove('slide-in-right-reverse');
+            document.body.querySelector('.un').classList.remove('is-active');
+            document.body.querySelector('.cinq').classList.add('is-active');
+            i = 4;;
+            setTimeout(() => {
+                document.body.querySelector('.pong').classList.remove('slide-in-left');
+            }, 1000);
+        }, 1000);
+    } else if (i == 4) {
+        document.body.querySelector('.pong').classList.add('slide-in-right-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.pong').classList.add('none');
+            document.body.querySelector('.jeu-cv').classList.remove('none');
+            document.body.querySelector('.jeu-cv').classList.add('slide-in-left');
+            document.body.querySelector('.pong').classList.remove('slide-in-right-reverse');
+            document.body.querySelector('.cinq').classList.remove('is-active');
+            document.body.querySelector('.quatre').classList.add('is-active');
+            i--;
+            setTimeout(() => {
+                document.body.querySelector('.jeu-cv').classList.remove('slide-in-left');
+            }, 1000);
+        }, 1000);
+    } else if (i == 3) {
+        document.body.querySelector('.jeu-cv').classList.add('slide-in-right-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.jeu-cv').classList.add('none');
+            document.body.querySelector('.cv').classList.remove('none');
+            document.body.querySelector('.cv').classList.add('slide-in-left');
+            document.body.querySelector('.jeu-cv').classList.remove('slide-in-right-reverse');
+            document.body.querySelector('.quatre').classList.remove('is-active');
+            document.body.querySelector('.trois').classList.add('is-active');
+            i--;
+            setTimeout(() => {
+                document.body.querySelector('.cv').classList.remove('slide-in-left');
+            }, 1000);
+        }, 1000);
+    } else if (i == 2) {
+        document.body.querySelector('.cv').classList.add('slide-in-right-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.cv').classList.add('none');
+            document.body.querySelector('.portfolioV1').classList.remove('none');
+            document.body.querySelector('.portfolioV1').classList.add('slide-in-left');
+            document.body.querySelector('.cv').classList.remove('slide-in-right-reverse');
+            document.body.querySelector('.trois').classList.remove('is-active');
+            document.body.querySelector('.deux').classList.add('is-active');
+            i--;  
+            setTimeout(() => {
+                document.body.querySelector('.portfolioV1').classList.remove('slide-in-left');
+            }, 1000);
+        }, 1000);
+    } else if (i == 1) {
+        document.body.querySelector('.portfolioV1').classList.add('slide-in-right-reverse');
+        setTimeout(() => {
+            document.body.querySelector('.portfolioV1').classList.add('none');
+            document.body.querySelector('.littlegame').classList.remove('none');
+            document.body.querySelector('.littlegame').classList.add('slide-in-left');
+            document.body.querySelector('.portfolioV1').classList.remove('slide-in-right-reverse');
+            document.body.querySelector('.deux').classList.remove('is-active');
+            document.body.querySelector('.un').classList.add('is-active');
+            i--;
+            setTimeout(() => {
+                document.body.querySelector('.littlegame').classList.remove('slide-in-left');
+            }, 1000);
+        }, 1000);
+    }
+})
+
+
+document.body.querySelector('.un').addEventListener('click', function () {
+    document.body.querySelector('.littlegame').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.portfolioV1').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.jeu-cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.pong').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.un').classList.add('is-active');
+    document.body.querySelector('.deux').classList.remove('is-active');
+    document.body.querySelector('.trois').classList.remove('is-active');
+    document.body.querySelector('.quatre').classList.remove('is-active');
+    document.body.querySelector('.cinq').classList.remove('is-active');
+    setTimeout(() => {
+        document.body.querySelector('.littlegame').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.portfolioV1').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.jeu-cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.pong').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.littlegame').classList.add('slide-in-fwd-center');
+        document.body.querySelector('.littlegame').classList.remove('none');
+        document.body.querySelector('.portfolioV1').classList.add('none');
+        document.body.querySelector('.cv').classList.add('none');
+        document.body.querySelector('.jeu-cv').classList.add('none');
+        document.body.querySelector('.pong').classList.add('none');
+        setTimeout(() => {
+            document.body.querySelector('.littlegame').classList.remove('slide-in-fwd-center');
+        }, 700);
+    }, 700);
+    i = 0;
+})
+
+document.body.querySelector('.deux').addEventListener('click', function () {
+    document.body.querySelector('.littlegame').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.portfolioV1').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.jeu-cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.pong').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.un').classList.remove('is-active');
+    document.body.querySelector('.deux').classList.add('is-active');
+    document.body.querySelector('.trois').classList.remove('is-active');
+    document.body.querySelector('.quatre').classList.remove('is-active');
+    document.body.querySelector('.cinq').classList.remove('is-active');
+    setTimeout(() => {
+        document.body.querySelector('.littlegame').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.portfolioV1').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.jeu-cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.pong').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.portfolioV1').classList.add('slide-in-fwd-center');
+        document.body.querySelector('.littlegame').classList.add('none');
+        document.body.querySelector('.portfolioV1').classList.remove('none');
+        document.body.querySelector('.cv').classList.add('none');
+        document.body.querySelector('.jeu-cv').classList.add('none');
+        document.body.querySelector('.pong').classList.add('none');
+        setTimeout(() => {
+            document.body.querySelector('.portfolioV1').classList.remove('slide-in-fwd-center');
+        }, 700);
+    }, 700);
+    i = 1;
+})
+
+document.body.querySelector('.trois').addEventListener('click', function () {
+    document.body.querySelector('.littlegame').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.portfolioV1').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.jeu-cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.pong').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.un').classList.remove('is-active');
+    document.body.querySelector('.deux').classList.remove('is-active');
+    document.body.querySelector('.trois').classList.add('is-active');
+    document.body.querySelector('.quatre').classList.remove('is-active');
+    document.body.querySelector('.cinq').classList.remove('is-active');
+    setTimeout(() => {
+        document.body.querySelector('.littlegame').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.portfolioV1').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.jeu-cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.pong').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.cv').classList.add('slide-in-fwd-center');
+        document.body.querySelector('.littlegame').classList.add('none');
+        document.body.querySelector('.portfolioV1').classList.add('none');
+        document.body.querySelector('.cv').classList.remove('none');
+        document.body.querySelector('.jeu-cv').classList.add('none');
+        document.body.querySelector('.pong').classList.add('none');
+        setTimeout(() => {
+            document.body.querySelector('.cv').classList.remove('slide-in-fwd-center');
+        }, 700);
+    }, 700);
+    i = 2;
+})
+
+document.body.querySelector('.quatre').addEventListener('click', function () {
+    document.body.querySelector('.littlegame').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.portfolioV1').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.jeu-cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.pong').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.un').classList.remove('is-active');
+    document.body.querySelector('.deux').classList.remove('is-active');
+    document.body.querySelector('.trois').classList.remove('is-active');
+    document.body.querySelector('.quatre').classList.add('is-active');
+    document.body.querySelector('.cinq').classList.remove('is-active');
+    setTimeout(() => {
+        document.body.querySelector('.littlegame').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.portfolioV1').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.jeu-cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.pong').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.jeu-cv').classList.add('slide-in-fwd-center');
+        document.body.querySelector('.littlegame').classList.add('none');
+        document.body.querySelector('.portfolioV1').classList.add('none');
+        document.body.querySelector('.cv').classList.add('none');
+        document.body.querySelector('.jeu-cv').classList.remove('none');
+        document.body.querySelector('.pong').classList.add('none');
+        setTimeout(() => {
+            document.body.querySelector('.jeu-cv').classList.remove('slide-in-fwd-center');
+        }, 700);
+    }, 700);
+    i = 3;
+})
+
+document.body.querySelector('.cinq').addEventListener('click', function () {
+    document.body.querySelector('.littlegame').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.portfolioV1').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.jeu-cv').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.pong').classList.add('slide-in-fwd-center-back');
+    document.body.querySelector('.un').classList.remove('is-active');
+    document.body.querySelector('.deux').classList.remove('is-active');
+    document.body.querySelector('.trois').classList.remove('is-active');
+    document.body.querySelector('.quatre').classList.remove('is-active');
+    document.body.querySelector('.cinq').classList.add('is-active');
+    setTimeout(() => {
+        document.body.querySelector('.littlegame').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.portfolioV1').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.jeu-cv').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.pong').classList.remove('slide-in-fwd-center-back');
+        document.body.querySelector('.pong').classList.add('slide-in-fwd-center');
+        document.body.querySelector('.littlegame').classList.add('none');
+        document.body.querySelector('.portfolioV1').classList.add('none');
+        document.body.querySelector('.cv').classList.add('none');
+        document.body.querySelector('.jeu-cv').classList.add('none');
+        document.body.querySelector('.pong').classList.remove('none');
+        setTimeout(() => {
+            document.body.querySelector('.pong').classList.remove('slide-in-fwd-center');
+        }, 700);
+    }, 700);
+    i = 4;
+})
