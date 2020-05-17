@@ -303,7 +303,7 @@
       position: absolute;
       height: 3px;
       width: 100%;
-      background-color: red;
+      background-color: lightskyblue;
   }
   .horizontal {
       transition: all 0.3s;
@@ -637,9 +637,51 @@
     width: 60%;
   } 
   .container {
-    top: -146%;
+    top: -205%;
   }
   .projets .pong p {
     width: 90%;
+  }
+  .littlegame {
+    top: -5%;
+  }
+  .portfolioV1 {
+    top: -55%;
+  }
+  .cv {
+    top: -113%;
+  }
+  .jeu-cv {
+    top: -175%;
+  }
+  .pong {
+    top: -215%;
+  }
+  .liens {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-height: 800px) {
+  .container {
+    top: -160%;
+  }
+  .littlegame {
+    top: -1%;
+  }
+  .portfolioV1 {
+    top: -45%;
+  }
+  .cv {
+    top: -90%;
+  }
+  .jeu-cv {
+    top: -142%;
+  }
+  .pong {
+    top: -175%;
+  }
+  .liens {
+    height: 70vh;
   }
 }
