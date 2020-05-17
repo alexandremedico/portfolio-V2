@@ -373,8 +373,10 @@
     width: 100%;
   }
   #right, #left {
-    opacity: 0;
     position: relative;
+  }
+  #right {
+    left: 75%;
   }
   .container {
     position: relative;
@@ -533,6 +535,9 @@
     position: relative;
     padding-top: 2%;
   }
+  .littlegame {
+    top: 5%;
+  }
 }
 
 @media screen and (min-width: 426px) {
@@ -643,16 +648,18 @@
     width: 90%;
   }
   .littlegame {
-    top: -5%;
+    top: 0%;
   }
   .portfolioV1 {
     top: -55%;
   }
   .cv {
     top: -113%;
+    width: 67%;
+    margin-left: 17%;
   }
   .jeu-cv {
-    top: -175%;
+    top: -170%;
   }
   .pong {
     top: -215%;
@@ -664,22 +671,22 @@
 
 @media screen and (max-width: 375px) and (min-height: 800px) {
   .container {
-    top: -160%;
+    top: -155%;
   }
   .littlegame {
-    top: -1%;
+    top: 5%;
   }
   .portfolioV1 {
-    top: -45%;
+    top: -40%;
   }
   .cv {
-    top: -90%;
+    top: -82%;
   }
   .jeu-cv {
-    top: -142%;
+    top: -135%;
   }
   .pong {
-    top: -175%;
+    top: -170%;
   }
   .liens {
     height: 70vh;
