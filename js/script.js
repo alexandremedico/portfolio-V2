@@ -3,7 +3,7 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     if (screen.width <= 425) {
         // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            console.log('telephone')
+            console.log('telephone');
         //     window.document.getElementById('declencheur1').classList.remove('none');
         //     window.document.getElementById('declencheur1').classList.add('animated2','fadeInLeft');
         //     window.document.getElementById('declencheur2').classList.remove('none');
@@ -387,3 +387,12 @@ document.body.querySelector('.cinq').addEventListener('click', function () {
     }, 700);
     i = 4;
 })
+
+if (innerWidth <= 425) {
+    console.log('je suis la');
+    document.getElementById('solar').remove();
+}
+
+if (innerWidth > 425) {
+    document.getElementById('liensMobile').remove();
+}

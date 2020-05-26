@@ -538,6 +538,15 @@
   .littlegame {
     top: 5%;
   }
+  .job {
+    font-size: 0.6rem;
+  }
+  #liensMobile a img {
+    width: 50%;
+  }
+  #liensMobile {
+    display: table;
+  }
 }
 
 @media screen and (min-width: 426px) {
