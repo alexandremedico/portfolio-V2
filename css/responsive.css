@@ -6,6 +6,16 @@
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .moi .part2 img {
+    width: 55%;
+  }
+  .img-penseur {
+    top: 38%;
+    right: 18%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .competences
   {
@@ -96,6 +106,13 @@
   }
   .projets h1 {
     top: 300%;
+  }
+  .moi .part2 img {
+    width: 60%;
+  }
+  .img-penseur {
+    top: 71%;
+    right: 41%;
   }
 }
 
@@ -221,6 +238,11 @@
   }
   .jeu-cv a img {
     width: 60%;
+  }
+  .img-penseur {
+    top: 71%;
+    right: 37%;
+    width: 23%;
   }
 }
 
@@ -529,6 +551,7 @@
   }
   .moi .part2 img {
     margin-bottom: 3%;
+    width: 45%;
   }
   .projets h1 {
     top: 0%;
@@ -546,6 +569,13 @@
   }
   #liensMobile {
     display: table;
+  }
+  .img-penseur {
+    width: 65%;
+    margin-left: 20%;
+    position: relative;
+    top: 0;
+    right: 0;
   }
 }
 

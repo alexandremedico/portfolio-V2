@@ -7,6 +7,7 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .home
@@ -216,6 +217,13 @@ body {
   color: #3C97EC;
 }
 
+.img-penseur {
+  width: 30%;
+  position: absolute;
+  top: 28%;
+  right: 25%;
+}
+
 /* Moi */
 
 .moi
@@ -254,7 +262,7 @@ body {
 @-webkit-keyframes fadeInLeft {
    0% {
       opacity: 0;
-      -webkit-transform: translateX(-120px);
+      -webkit-transform: translateX(-320px);
    }
    100% {
       opacity: 1;
@@ -265,7 +273,7 @@ body {
 @keyframes fadeInLeft {
    0% {
       opacity: 0;
-      transform: translateX(-120px);
+      transform: translateX(-320px);
    }
    100% {
       opacity: 1;
@@ -288,7 +296,7 @@ body {
 
 .moi .part2 img
 {
-  width: 60%;
+  width: 45%;
 }
 
 .animated3 {
@@ -302,7 +310,7 @@ body {
 @-webkit-keyframes fadeInRight {
    0% {
       opacity: 0;
-      -webkit-transform: translateX(120px);
+      -webkit-transform: translateX(320px);
    }
    100% {
       opacity: 1;
@@ -313,7 +321,7 @@ body {
 @keyframes fadeInRight {
    0% {
       opacity: 0;
-      transform: translateX(120px);
+      transform: translateX(320px);
    }
    100% {
       opacity: 1;
