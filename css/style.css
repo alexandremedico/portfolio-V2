@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+}
+
 .home
 {
   height: 110vh;
@@ -534,7 +538,7 @@
 .part1 .javascript .barre .barre1 .barre-javascript
 {
    height:75px;
-   width:70%;
+   width:60%;
    background-color: #F0DB4F;
 }
 
@@ -570,7 +574,7 @@
 .part1 .nodeJS .barre .barre1 .barre-nodeJS
 {
    height:75px;
-   width:65%;
+   width:50%;
    background-color: #3C873A;
 }
 
