@@ -4,6 +4,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) 
 
 Voici enfin ma 2e version de mon portfolio !!!
+Il y des différences qui peuvent faire buger l'interface entre les différentes taille d'écran, il faudra recharger la page.
 
 ## Pour commencer
 
